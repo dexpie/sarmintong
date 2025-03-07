@@ -30,11 +30,7 @@ const Gallery = () => {
                 <div className="gallery-grid">
                     {galleryImages.map((image, index) => (
                         <div key={index} className="gallery-item">
-                            <img
-                                src={image}
-                                className="gallery-image"
-                                onClick={() => openModal(image)}
-                            />
+                            <img src="path/to/image.jpg" alt="Description of the image" />
                         </div>
                     ))}
                 </div>
