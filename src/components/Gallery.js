@@ -32,7 +32,6 @@ const Gallery = () => {
                         <div key={index} className="gallery-item">
                             <img
                                 src={image}
-                                alt={`Gallery Image ${index + 1}`}
                                 className="gallery-image"
                                 onClick={() => openModal(image)}
                             />
