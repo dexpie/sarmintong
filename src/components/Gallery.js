@@ -31,7 +31,7 @@ const Gallery = () => {
                         <div key={index} className="gallery-item">
                             <img
                                 src={image}
-                                alt={`Gallery image ${index + 1}`} // Added dynamic alt text
+                                alt={`Gallery image ${index + 1}`} // Simple dynamic alt for each image
                                 onClick={() => openModal(image)}
                             />
                         </div>
