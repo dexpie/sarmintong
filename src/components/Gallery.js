@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Sample gallery images (replace with your own images)
 const galleryImages = [
     "https://via.placeholder.com/300x200?text=Image+1",
     "https://via.placeholder.com/300x200?text=Image+2",
@@ -30,7 +29,11 @@ const Gallery = () => {
                 <div className="gallery-grid">
                     {galleryImages.map((image, index) => (
                         <div key={index} className="gallery-item">
-                            <img src="path/to/image.jpg" alt="Description of the image" />
+                            <img
+                                src={image}
+                                alt={`Gallery image ${index + 1}`}
+                                onClick={() => openModal(image)}
+                            />
                         </div>
                     ))}
                 </div>
